@@ -1,12 +1,17 @@
-% CVRough4.tex
+% CV.tex
 %
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003-2007 David tJ. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
 % (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2012-2014 Bryan T. Weinstein <btweinstein@gmail.com> http://people.seas.harvard.edu/~bweinstein/
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
 \documentclass[letterpaper,11pt]{article}
+
+%%%% Define various commands %%%%%%%
+
+\newcommand{\emailAddress}{bweinstein@seas.harvard.edu}
 
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
@@ -28,7 +33,7 @@ pdfsubject={CV},
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\footskip}{15pt}
 \lfoot{\emph{\small{Bryan T. Weinstein}}}
-\rfoot{\emph{\small{Fall 2012}}}
+\rfoot{\emph{\small{Fall 2014}}}
 \fancyfootoffset{.2in}
 
 \definecolor{mygrey}{gray}{0.80}
@@ -94,7 +99,7 @@ pdfsubject={CV},
 %These are for my own use; they don't do anything.
 \title{Bryan T. Weinstein's CV}
 \author{Bryan T. Weinstein}
-\date{Fall 2012}
+\date{Fall 2014}
 
 \vspace{2pt}
 \phantomsection
@@ -106,8 +111,8 @@ pdfsubject={CV},
 \end{center}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-GSAS Mail Center, Perkins Hall, Room 207  		& 	(585) 738-0690  \\
-35 Oxford Street, Cambridge, MA 02138 &  	\href{mailto:bweinstein@fas.harvard.edu}{bweinstein@fas.harvard.edu} \\
+232 Willow Avenue   		& 	(585) 738-0690  \\
+Somerville, MA 02144    &  	\href{mailto:\emailAddress}{\emailAddress} \\
 \end{tabular*}
 \\
 
@@ -119,7 +124,20 @@ GSAS Mail Center, Perkins Hall, Room 207  		& 	(585) 738-0690  \\
 
 \begin{itemize}
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2017}
+	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}
+	\begin{itemize}
+		\resitem{Advisor: \href{http://www.seas.harvard.edu/directory/nelson}{David R. Nelson}: Professor of Physics and Applied Physics; Solomon Professor of Biophysics}
+		\resitem{GPA: 3.96/4.00}
+	\end{itemize}
+
+\item
+	\ressubheading{Harvard University}{Cambridge, MA}{Secondary Field in Computational Science and Engineering}{Expected May 2018}	
+	\begin{itemize}
+		\resitem{Took four advanced applied math and scientific computing courses}
+		\resitem{Learned how to use state-of-the-art computational methods in scientific research}
+		\resitem{Defended work in front of committee}
+	\end{itemize}	
+	
 \item
 	\ressubheading{Harvard University}{Cambridge, MA}{S.M. in Applied Physics}{Expected May 2014}
 
@@ -322,7 +340,7 @@ GSAS Mail Center, Perkins Hall, Room 207  		& 	(585) 738-0690  \\
 	Linux/Unix, Windows, Macintosh}
 
 \resitem{\textit{Selected Languages \& Programs}:
-	Mathematica, Matlab, C++, CUDA, Fortran, Java, Python, Bash, \LaTeX, OOMMF, Origin, Igor, Windows Powershell, HTML, CSS}
+	Python, Mathematica, Matlab, C++, CUDA, Java, Axiovision, Bash, \LaTeX, OOMMF, Origin, Windows Powershell, HTML, CSS}
 
 \resitem{\textit{Hardware}: Build customized computers for scientific applications}
 \resitem{\textit{Miscellaneous}: Significant experience optimizing programs to run on multiple processors, graphics processing units, and supercomputers}
