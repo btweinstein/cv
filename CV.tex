@@ -65,12 +65,32 @@ pdfsubject={CV},
 }
 	
 
-%I kind of cheat here to make the bullets go where I want. I 
+%I kind of cheat here to make the bullets go where I want.
 \newcommand{\ressubheading}[4]{\vspace{-14pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
 		\\
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+% Instead of defining a general command, I define a silly
+% specific one
+
+\newcommand{\educationsubheading}[8]{\vspace{-40pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\\
+		\\
+		\\
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+		\textit{#5} & \textit{#6} \\
+		\textit{#7} & \textit{#8} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\resbelowsubheading}[2]{\vspace{-14pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\\
+		\textit{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 
 \newcommand{\award}[2]{\vspace{-5pt}
@@ -124,7 +144,7 @@ Somerville, MA 02144    &  	\href{mailto:\emailAddress}{\emailAddress} \\
 
 \begin{itemize}
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}
+	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}	
 	\begin{itemize}
 		\resitem{Advisors:}
 		\begin{itemize}
@@ -136,16 +156,18 @@ Director of FAS Center for Systems Biology}
 		\resitem{GPA: 3.96/4.00}
 	\end{itemize}
 
-\item
-	\ressubheading{Harvard University}{Cambridge, MA}{Secondary Field in Computational Science and Engineering}{Expected May 2018}	
+\resbelowsubheading{PhD Secondary Field: Computational Science and Engineering}{Expected May 2018}
+
 	\begin{itemize}
 		\resitem{Took four advanced applied math and scientific computing courses}
 		\resitem{Learned how to use state-of-the-art computational methods in scientific research}
 		\resitem{Defended work in front of committee}
 	\end{itemize}	
-	
-\item
-	\ressubheading{Harvard University}{Cambridge, MA}{S.M. in Applied Physics}{Expected May 2014}
+
+\resbelowsubheading{S.M. in Applied Physics}{Expected May 2014}
+	\begin{itemize}
+	\resitem{Completed 10 courses}
+	\end{itemize}
 
 \item
 	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Bachelor of Science in Engineering, Engineering Physics}{May 2012}
@@ -368,11 +390,19 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 
+\item \award{Analytical}{}
+\begin{itemize}
+\resitem{Knowledge of state-of-the-art equilibrium and nonequilibrium statistical physics methods}
+\resitem{Expert knowledge of Applied Mathematics, especially partial differential equations}
+\resitem{Expertise utilizing Mathematica to solve complex physical problems}
+\resitem{Deep understanding of Bayesian inference in data analysis}
+\end{itemize}
+
 \item \award{Computational}{}
 
 \begin{itemize}
 
-\resitem{Secondary Field in Computational Science and Engineering program as part of PhD}
+\resitem{Secondary Field in Computational Science and Engineering (part of PhD)}
 	\begin{itemize}
 	\resitem{Significant experience optimizing programs to run on multiple processors, graphics processing units, and supercomputers.}
 	\resitem{Expert at analyzing and visualizing ``Big-Data''}
@@ -430,14 +460,6 @@ Director of FAS Center for Systems Biology}
 
 \end{itemize}
 
-\item \award{Analytical}{}
-\begin{itemize}
-\resitem{Knowledge of state-of-the-art equilibrium and nonequilibrium statistical physics methods}
-\resitem{Expert knowledge of Applied Mathematics, especially partial differential equations}
-\resitem{Basic knowledge of using Bayesian inference in data analysis}
-\resitem{Expertise utilizing Mathematica to solve complex physical problems}
-\end{itemize}
-
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -457,8 +479,7 @@ Director of FAS Center for Systems Biology}
 \resheading{Professional Organizations}
 
 \begin{itemize}
-\item
-	Tau Beta Pi Engineering Honor Society
+	\resitem{Tau Beta Pi Engineering Honor Society}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
