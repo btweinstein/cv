@@ -15,7 +15,6 @@
 
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
-
 \usepackage{color}
 
 \usepackage{hyperref}
@@ -28,12 +27,14 @@ pdfsubject={CV},
 }
 
 \usepackage{fancyhdr}
+\usepackage[backend=biber, sorting=ynt]{biblatex}
+
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\footskip}{15pt}
 \lfoot{\emph{\small{Bryan T. Weinstein}}}
-\rfoot{\emph{\small{Spring 2014}}}
+\rfoot{\emph{\small{Fall 2015}}}
 \fancyfootoffset{.2in}
 
 \definecolor{mygrey}{gray}{0.80}
@@ -46,6 +47,7 @@ pdfsubject={CV},
 \addtolength{\textwidth}{1.0in}
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
+
 
 %-----------------------------------------------------------
 %Custom commands
@@ -130,8 +132,8 @@ pdfsubject={CV},
 \end{center}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-232 Willow Avenue   		& 	(585) 738-0690  \\
-Somerville, MA 02144    &  	\href{mailto:\emailAddress}{\emailAddress} \\
+25 Dighton St, Apt. 1   		& 	(585) 738-0690  \\
+Brighton, MA 02135 &  	\href{mailto:\emailAddress}{\emailAddress} \\
 \end{tabular*}
 \\
 
@@ -145,6 +147,7 @@ Somerville, MA 02144    &  	\href{mailto:\emailAddress}{\emailAddress} \\
 \item
 	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}	
 	\begin{itemize}
+		\resitem{Working Thesis Title: \textit{Spatial Microbial Evolution}}
 		\resitem{Advisors:}
 		\begin{itemize}
 			\resitem{\href{http://www.seas.harvard.edu/directory/nelson}{David R. Nelson}: Professor of Physics and Applied Physics, Solomon Professor of Biophysics}
@@ -152,20 +155,18 @@ Somerville, MA 02144    &  	\href{mailto:\emailAddress}{\emailAddress} \\
 Professor of Molecular and Cellular Biology,
 Director of FAS Center for Systems Biology}
 		\end{itemize}		
-		\resitem{\emph{PhD Secondary Field: Computational Science and Engineering}}		
+		\resitem{\emph{PhD Secondary Field: Computational Science and Engineering (CSE)}}		
 		\begin{itemize}
 			\resitem{Completed four advanced applied math and scientific computing courses}
 			\resitem{Learned state-of-the-art computational methods used in scientific research}
 		\end{itemize}			
-		
-		\resitem{GPA: 3.96/4.00}
 	\end{itemize}
 
-\resbelowsubheading{S.M. in Applied Physics}{Expected May 2014}
+\resbelowsubheading{S.M. in Applied Physics}{November 2014}
 	\begin{itemize}
-	\resitem{Completed 10 courses}
+	\resitem{Completed 12 courses: 4 physics core courses, 4 CSE courses, and 4 soft-matter/biophysics electives}
+	\resitem{GPA: 3.95/4.00}
 	\end{itemize}
-
 \item
 	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Bachelor of Science in Engineering, Engineering Physics}{May 2012}
 	\begin{itemize}
@@ -182,7 +183,7 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 \item
-	\ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2014}
+	\ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
 
 	\begin{itemize}
 		\resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE)}
@@ -192,7 +193,7 @@ Director of FAS Center for Systems Biology}
 	\end{itemize}
 
 \item
-	\ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2014}
+	\ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
 	\begin{itemize}
 		
 		\resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS)}
@@ -222,7 +223,7 @@ Director of FAS Center for Systems Biology}
 \item
 	\ressubheading{Harvard University}{Cambridge, MA}{Phillipe Cluzel: Applied Physics, Molecular and Cellular Biology }{Jan 2013 - Sept 2013}
 \begin{itemize}
-	\resitem{Extended previous model to predict how spherical tumors respond to pairwise combinations of drugs}
+	\resitem{Applied previous model to predict how spherical tumors respond to pairwise combinations of drugs}
 	\resitem{Learned tissue culture techniques and grew multiple tumor cell lines}
 	\resitem{Imaged tumors using standard microscopy techniques; used ImageJ to determine their sizes}
 	\resitem{Created high-content-screening pipeline to quantify hundreds of images using an OMERO server}
@@ -237,6 +238,29 @@ Director of FAS Center for Systems Biology}
 \end{itemize}
 
 \end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Presentations and Conferences}
+
+\renewcommand{\refname}{\vspace*{-12mm}}
+
+\begin{refsection}[Conferences.bib]
+\nocite{*}
+\printbibliography
+\end{refsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Publications}
+
+\renewcommand{\refname}{\vspace*{-12mm}}
+
+\begin{refsection}[Me.bib]
+\nocite{*}
+\printbibliography
+\end{refsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Undergraduate Research}
@@ -289,18 +313,6 @@ Director of FAS Center for Systems Biology}
 	\end{itemize}	
 	
 \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Publications \& Presentations}
-
-\renewcommand{\refname}{\vspace*{-12mm}}
-
-\bibliographystyle{plainyr-rev}
-\nocite{*}
-\bibliography{Me,Conferences}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \resheading{Undergraduate Awards}
 
@@ -443,7 +455,7 @@ Director of FAS Center for Systems Biology}
 
 \resitem{Biology:}
 \begin{itemize}
-	\resitem{Wet-lab experience}
+	\resitem{Wet-lab experience, basic cloning techniques}
 	\resitem{Tissue culture room experience}
 \end{itemize}
 
