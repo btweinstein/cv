@@ -4,3 +4,7 @@
 *.ddf
 *tex.Backup*
 *.bak*
+*blx*
+*aux*
+*bbl*
+*blg*
