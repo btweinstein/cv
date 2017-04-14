@@ -1,3 +1,6 @@
 /Old/
 /*.tex~
 /auto/
+*.ddf
+*tex.Backup*
+*.bak*

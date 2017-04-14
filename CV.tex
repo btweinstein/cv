@@ -27,14 +27,14 @@ pdfsubject={CV},
 }
 
 \usepackage{fancyhdr}
-\usepackage[backend=biber, sorting=ynt]{biblatex}
+\usepackage[backend=biber,sorting=ynt]{biblatex}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\footskip}{15pt}
 \lfoot{\emph{\small{Bryan T. Weinstein}}}
-\rfoot{\emph{\small{Fall 2015}}}
+\rfoot{\emph{\small{Spring 2017}}}
 \fancyfootoffset{.2in}
 
 \definecolor{mygrey}{gray}{0.80}
@@ -55,24 +55,24 @@ pdfsubject={CV},
 
 \newcommand{\resheading}[1]
 {
-	\vspace{2pt}
-	\phantomsection
-	\addcontentsline{toc}{section}{#1}
-	{\large \colorbox{mygrey}{
-	\begin{minipage}{\textwidth}{
-		\textbf{#1 \vphantom{p\^{E}}}}
-	\end{minipage}}
-	}
-	\vspace{-9pt}
+        \vspace{2pt}
+        \phantomsection
+        \addcontentsline{toc}{section}{#1}
+        {\large \colorbox{mygrey}{
+        \begin{minipage}{\textwidth}{
+                \textbf{#1 \vphantom{p\^{E}}}}
+        \end{minipage}}
+        }
+        \vspace{-9pt}
 }
-	
+        
 
 %I kind of cheat here to make the bullets go where I want.
 \newcommand{\ressubheading}[4]{\vspace{-14pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\\
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
 % Instead of defining a general command, I define a silly
@@ -80,24 +80,24 @@ pdfsubject={CV},
 
 \newcommand{\educationsubheading}[8]{\vspace{-40pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\\
-		\\
-		\\
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-		\textit{#5} & \textit{#6} \\
-		\textit{#7} & \textit{#8} \\
+                \\
+                \\
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
+                \textit{#5} & \textit{#6} \\
+                \textit{#7} & \textit{#8} \\
 \end{tabular*}\vspace{-6pt}}
 
 \newcommand{\resbelowsubheading}[2]{\vspace{-14pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\\
-		\textit{#1} & \textit{#2} \\
+                \\
+                \textit{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 
 \newcommand{\award}[2]{\vspace{-5pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 
+                \textbf{#1} & #2 
 \end{tabular*}\vspace{-8pt}}
 
 
@@ -107,9 +107,9 @@ pdfsubject={CV},
 \ressubheading{#1}{#2}{#3}{}
 \vspace{-1pt}
 \begin{itemize}
-	\resitem{\emph{Relationship}: #4}
-	\resitem{\emph{Email}: \href{mailto:#5}{#5}}
-	\resitem{\emph{Phone}: #6}
+        \resitem{\emph{Relationship}: #4}
+        \resitem{\emph{Email}: \href{mailto:#5}{#5}}
+        \resitem{\emph{Phone}: #6}
 \end{itemize}
 }
 
@@ -132,8 +132,8 @@ pdfsubject={CV},
 \end{center}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-25 Dighton St, Apt. 1   		& 	(585) 738-0690  \\
-Brighton, MA 02135 &  	\href{mailto:\emailAddress}{\emailAddress} \\
+25 Dighton St, Apt. 1                   &       (585) 738-0690  \\
+Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \end{tabular*}
 \\
 
@@ -145,35 +145,36 @@ Brighton, MA 02135 &  	\href{mailto:\emailAddress}{\emailAddress} \\
 
 \begin{itemize}
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}	
-	\begin{itemize}
-		\resitem{Working Thesis Title: \textit{Spatial Microbial Evolution}}
-		\resitem{Advisors:}
-		\begin{itemize}
-			\resitem{\href{http://www.seas.harvard.edu/directory/nelson}{David R. Nelson}: Professor of Physics and Applied Physics, Solomon Professor of Biophysics}
-		\resitem{\href{https://www.mcb.harvard.edu/mcb/faculty/profile/andrew-w-murray/}{Andrew W. Murray}: Herschel Smith Professor of Molecular Genetics,
+        \ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}     
+        \begin{itemize}
+                \resitem{Working Thesis Title: \textit{Microbial Evolutionary Dynamics coupled with Transport}}
+                \resitem{Advisors:}
+                \begin{itemize}
+                        \resitem{\href{http://www.seas.harvard.edu/directory/nelson}{David R. Nelson}: Professor of Physics and Applied Physics, Solomon Professor of Biophysics}
+                \resitem{\href{https://www.mcb.harvard.edu/mcb/faculty/profile/andrew-w-murray/}{Andrew W. Murray}: Herschel Smith Professor of Molecular Genetics,
 Professor of Molecular and Cellular Biology,
 Director of FAS Center for Systems Biology}
-		\end{itemize}		
-		\resitem{\emph{PhD Secondary Field: Computational Science and Engineering (CSE)}}		
-		\begin{itemize}
-			\resitem{Completed four advanced applied math and scientific computing courses}
-			\resitem{Learned state-of-the-art computational methods used in scientific research}
-		\end{itemize}			
-	\end{itemize}
+                \end{itemize}           
+                \resitem{\emph{PhD Secondary Field: Computational Science and Engineering (CSE)}}         
+                \begin{itemize}
+                        \resitem{Completed four advanced applied math and scientific computing courses}
+                        \resitem{Learned state-of-the-art computational methods used in scientific research}
+                        \resitem{\textbf{Capstone:} GPU-powered Lattice Boltzmann fluid-mechanics simulation utilizing OpenCL \& OpenGL for real-time visualization.  }
+                \end{itemize}                   
+        \end{itemize}
 
 \resbelowsubheading{S.M. in Applied Physics}{November 2014}
-	\begin{itemize}
-	\resitem{Completed 12 courses: 4 physics core courses, 4 CSE courses, and 4 soft-matter/biophysics electives}
-	\resitem{GPA: 3.95/4.00}
-	\end{itemize}
+        \begin{itemize}
+        \resitem{Completed 12 courses: 4 physics core courses, 4 CSE courses, and 4 soft-matter/biophysics electives}
+        \resitem{GPA: 3.95/4.00}
+        \end{itemize}
 \item
-	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Bachelor of Science in Engineering, Engineering Physics}{May 2012}
-	\begin{itemize}
-		\resitem{GPA: 4.00/4.00 (Summa Cum Laude)}
-		\resitem{Engineering Concentration: Aerospace Engineering}
-		\resitem{Senior Project: Simulating Interactions between Confined Spins and Ferromagnetic Vortices}
-	\end{itemize}
+        \ressubheading{Case Western Reserve University}{Cleveland, OH}{Bachelor of Science in Engineering, Engineering Physics}{May 2012}
+        \begin{itemize}
+                \resitem{GPA: 4.00/4.00 (Summa Cum Laude)}
+                \resitem{Engineering Concentration: Aerospace Engineering}
+                \resitem{Senior Project: Simulating Interactions between Confined Spins and Ferromagnetic Vortices}
+        \end{itemize}
 \end{itemize}
 
 
@@ -182,25 +183,35 @@ Director of FAS Center for Systems Biology}
 \resheading{Fellowships}
 
 \begin{itemize}
-\item
-	\ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
-
-	\begin{itemize}
-		\resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE)}
-		\resitem{Selected out of 1,300 applicants; 50 fellowships awarded}
-		\resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
-		
-	\end{itemize}
 
 \item
-	\ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
-	\begin{itemize}
-		
-		\resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS)}
-		
-		\resitem{Selected out of 150 students; 8 fellowships awarded}
-		
-	\end{itemize}
+        \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Graduate Student}{September 2016 - September 2017}
+
+        \begin{itemize}
+                \resitem{Wrote proposal and won a \$25,000 student scholarship from Harvard's Institute for Applied Computational Science to develop my GPU-powered Lattice Boltzmann fluid-mechanics simulation}
+                
+                
+        \end{itemize}
+
+\item
+        \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
+
+        \begin{itemize}
+                \resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE)}
+                \resitem{Selected out of 1,300 applicants; 50 fellowships awarded}
+                \resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
+                
+        \end{itemize}
+
+\item
+        \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
+        \begin{itemize}
+                
+                \resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS)}
+                
+                \resitem{Selected out of 150 students; 8 fellowships awarded}
+                
+        \end{itemize}
 
 
 \end{itemize}
@@ -210,14 +221,14 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 \item
-	\ressubheading{Marine Biological Laboratory Physiology Course}{Woods Hole, MA}{Student}{June 2014 - August 2014}
+        \ressubheading{Marine Biological Laboratory Physiology Course}{Woods Hole, MA}{Student}{June 2014 - August 2014}
 
-	\begin{itemize}
-		\resitem{Applied and accepted into intense 7 week course focused on intersection of experiment and theory in cellular physiology}
-		\resitem{Learned how to use state-of-the-art microscopy to examine cellular behavior}
-		\resitem{Interacted with leading cellular physiology researchers in daily lectures and seminars}
-		\resitem{Course taught by Rob Phillips, Jennifer Lippincott-Schwartz, Wallace Marshall}
-	\end{itemize}
+        \begin{itemize}
+                \resitem{Applied and accepted into intense 7 week course focused on intersection of experiment and theory in cellular physiology}
+                \resitem{Learned how to use state-of-the-art microscopy to examine cellular behavior}
+                \resitem{Interacted with leading cellular physiology researchers in daily lectures and seminars}
+                \resitem{Course taught by Rob Phillips, Jennifer Lippincott-Schwartz, Wallace Marshall}
+        \end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -226,31 +237,31 @@ Director of FAS Center for Systems Biology}
 \begin{itemize}
 
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{David R. Nelson \& Andrew Murray: Physics, Molecular and Cellular Biology}{Sept 2013 - Present}
+        \ressubheading{Harvard University}{Cambridge, MA}{David R. Nelson \& Andrew Murray: Physics, Molecular and Cellular Biology}{Sept 2013 - Present}
 \begin{itemize}
-	\resitem{Combined nonequilibrium statistical mechanics and experimental molecular biology to quantify the evolutionary dynamics of microbial range expansions}
-	\resitem{Learned experimental biology techniques (trained in Dr. Andrew Murray's Lab)}
-	\resitem{Captured images via microscopy; utilized Python and ImageJ extensively for analysis}
-	\resitem{Devised algorithms to analyze and visualize large sets of biological data}
-	\resitem{Developed simulations of range expansions in Python and C++}
-	\resitem{Created analytical models utilizing stochastic methods to predict experimental results}
+        \resitem{Combined nonequilibrium statistical mechanics and experimental molecular biology to quantify the evolutionary dynamics of microbial range expansions}
+        \resitem{Learned experimental biology techniques (trained in Dr. Andrew Murray's Lab)}
+        \resitem{Captured images via microscopy; utilized Python and ImageJ extensively for analysis}
+        \resitem{Devised algorithms to analyze and visualize large sets of biological data}
+        \resitem{Developed simulations of range expansions in Python, C++, and OpenCL}
+        \resitem{Created analytical models utilizing stochastic methods to predict experimental results}
 \end{itemize}
 
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{Phillipe Cluzel: Applied Physics, Molecular and Cellular Biology }{Jan 2013 - Sept 2013}
+        \ressubheading{Harvard University}{Cambridge, MA}{Phillipe Cluzel: Applied Physics, Molecular and Cellular Biology }{Jan 2013 - Sept 2013}
 \begin{itemize}
-	\resitem{Applied previous model to predict how spherical tumors respond to pairwise combinations of drugs}
-	\resitem{Learned tissue culture techniques and grew multiple tumor cell lines}
-	\resitem{Imaged tumors using standard microscopy techniques; used ImageJ to determine their sizes}
-	\resitem{Created high-content-screening pipeline to quantify hundreds of images using an OMERO server}
+        \resitem{Applied previous model to predict how spherical tumors respond to pairwise combinations of drugs}
+        \resitem{Learned tissue culture techniques and grew multiple tumor cell lines}
+        \resitem{Imaged tumors using standard microscopy techniques; used ImageJ to determine their sizes}
+        \resitem{Created high-content-screening pipeline to quantify hundreds of images using an OMERO server}
 \end{itemize}
 
 \item
-	\ressubheading{Harvard University}{Cambridge, MA}{Joanna Aizenberg: Materials Science, Chemistry, Chemical Biology}{Sept 2012 - Jan 2013}
+        \ressubheading{Harvard University}{Cambridge, MA}{Joanna Aizenberg: Materials Science, Chemistry, Chemical Biology}{Sept 2012 - Jan 2013}
 \begin{itemize}
-	\resitem{Studied the mechanism by which water droplets coordinate their motions and form patterns on biomimetic hydrophobic surfaces}
-	\resitem{Tracked motion of hundreds of randomly moving and merging droplets using ImageJ}
-	\resitem{Created simulation in C++ to model droplet motion and compared with experimental results}
+        \resitem{Studied the mechanism by which water droplets coordinate their motions and form patterns on biomimetic hydrophobic surfaces}
+        \resitem{Tracked motion of hundreds of randomly moving and merging droplets using ImageJ}
+        \resitem{Created simulation in C++ to model droplet motion and compared with experimental results}
 \end{itemize}
 
 \end{itemize}
@@ -260,7 +271,7 @@ Director of FAS Center for Systems Biology}
 
 \renewcommand{\refname}{\vspace*{-12mm}}
 
-\begin{refsection}[Me.bib]
+\begin{refsection}[Me]
 \nocite{*}
 \printbibliography
 \end{refsection}
@@ -270,7 +281,7 @@ Director of FAS Center for Systems Biology}
 
 \renewcommand{\refname}{\vspace*{-12mm}}
 
-\begin{refsection}[Conferences.bib]
+\begin{refsection}[Conferences]
 \nocite{*}
 \printbibliography
 \end{refsection}
@@ -280,12 +291,12 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 \item
-	\ressubheading{Science in the News Presentation}{Cambridge, MA}{Physics of Evolution}{November 2014}
-	\begin{itemize}
-		\resitem{Described how physics-based models can be used to predict evolutionary trajectories to the public in a 1.5 hour talk}
-		\resitem{Presentation and was given to approximately 100 members of the public at Harvard Medical School}
-		\resitem{Worked closely with teammates to create an effective presentation}
-	\end{itemize}
+        \ressubheading{Science in the News Presentation}{Cambridge, MA}{Physics of Evolution}{November 2014}
+        \begin{itemize}
+                \resitem{Described how physics-based models can be used to predict evolutionary trajectories to the public in a 1.5 hour talk}
+                \resitem{Presentation and was given to approximately 100 members of the public at Harvard Medical School}
+                \resitem{Worked closely with teammates to create an effective presentation}
+        \end{itemize}
 \end{itemize}
 
 \newpage
@@ -302,47 +313,47 @@ Director of FAS Center for Systems Biology}
 \begin{itemize}
 
 \resitem{Secondary Field in Computational Science and Engineering (PhD minor)}
-	\begin{itemize}
-	\resitem{Significant experience optimizing programs to run on multiple processors, graphics processing units, and supercomputers.}
-	\resitem{Expert at analyzing and visualizing ``Big-Data''}
-	\resitem{Excellent at designing and running simulations to gain insight into complicated problems}
-	\resitem{Knowledge of stochastic methods to solve high-dimensional problems}
-	\end{itemize}
+        \begin{itemize}
+        \resitem{Significant experience optimizing programs to run on multiple processors, graphics processing units, and supercomputers.}
+        \resitem{Expert at analyzing and visualizing ``Big-Data''}
+        \resitem{Excellent at designing and running simulations to gain insight into complicated problems}
+        \resitem{Knowledge of stochastic methods to solve high-dimensional problems}
+        \end{itemize}
 
 \resitem{Software:}
 
 \begin{itemize}
 
-	\resitem{Languages for Scientific Computing:} 
-		\begin{itemize}
-		\resitem{Python, C++, CUDA, Matlab, Mathematica, Java}
-		\end{itemize}
-		
-	\resitem{Image Analysis Tools:}
-		\begin{itemize}
-		\resitem{ImageJ, Python, OpenCV, OMERO}
-		\end{itemize}
-	
-	\resitem{Other Selected Languages \& Programs}:
-		\begin{itemize}
-		\resitem{Netlogo, Axiovision, Origin, Igor, Bash, \LaTeX, Windows Powershell, Wordpress, HTML, CSS}
-		\end{itemize}
-	
+        \resitem{Languages for Scientific Computing:} 
+                \begin{itemize}
+                \resitem{Python, C, C++, OpenCL, CUDA, Matlab, Mathematica, Java}
+                \end{itemize}
+                
+        \resitem{Image Analysis Tools:}
+                \begin{itemize}
+                \resitem{ImageJ, Python, OpenCL, OpenCV, OMERO}
+                \end{itemize}
+        
+        \resitem{Other Selected Languages \& Programs}:
+                \begin{itemize}
+                \resitem{Netlogo, Axiovision, Origin, Igor, Bash, \LaTeX, Windows Powershell, Wordpress, HTML, CSS}
+                \end{itemize}
+        
 \end{itemize}
 
 \resitem{Hardware:} 
-	\begin{itemize}
-	\resitem{Build customized computers for scientific applications}
-	\end{itemize}
+        \begin{itemize}
+        \resitem{Build customized computers for scientific applications}
+        \end{itemize}
 
 \end{itemize}
 
 \item \award{Analytical}{}
 \begin{itemize}
-	\resitem{Expert knowledge of Applied Mathematics, especially partial differential equations and stochastic methods}
-	\resitem{Deep understanding of state-of-the-art equilibrium and nonequilibrium statistical physics methods}
-	\resitem{Expert knowledge of applying Mathematica to solve complex physical problems}
-	\resitem{Advanced knowledge of Bayesian inference in data analysis}
+        \resitem{Expert knowledge of Applied Mathematics, especially partial differential equations and stochastic methods}
+        \resitem{Deep understanding of state-of-the-art equilibrium and nonequilibrium statistical physics methods}
+        \resitem{Expert knowledge of applying Mathematica to solve complex physical problems}
+        \resitem{Advanced knowledge of Bayesian inference in data analysis}
 \end{itemize}
 
 
@@ -353,24 +364,24 @@ Director of FAS Center for Systems Biology}
 
 \resitem{Microscopy}
 \begin{itemize}
-	\resitem{Trained to use state-of-the-art microscopy techniques at Woods Hole Physiology course}
-	\resitem{Deep conceptual understanding of microscopy from optics course}
+        \resitem{Trained to use state-of-the-art microscopy techniques at Woods Hole Physiology course}
+        \resitem{Deep conceptual understanding of microscopy from optics course}
 \end{itemize}
 
 \resitem{Wet-lab}
 \begin{itemize}
-	\resitem{Basic laboratory experience}
-	\resitem{Basic cloning techniques}
-	\resitem{Tissue culture room experience}
+        \resitem{Basic laboratory experience}
+        \resitem{Basic cloning techniques}
+        \resitem{Tissue culture room experience}
 \end{itemize}
 
 \resitem{Physics:}
 \begin{itemize}
-	\resitem{Signal analysis instrumentation}
-	\resitem{Spectroscopy, multi-channel analyzers, photomultiplier tubes}
-	\resitem{Ultra-high vacuum surface science}
-	\resitem{Ultrasonic methods to determine material properties}
-	\resitem{Experimental methods to analyze chaotic systems}
+        \resitem{Signal analysis instrumentation}
+        \resitem{Spectroscopy, multi-channel analyzers, photomultiplier tubes}
+        \resitem{Ultra-high vacuum surface science}
+        \resitem{Ultrasonic methods to determine material properties}
+        \resitem{Experimental methods to analyze chaotic systems}
 \end{itemize}
 
 \end{itemize}
@@ -383,10 +394,10 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 \item
-	\ressubheading{Engineer in Training (EIT)}{Ohio}{Active}{September 2012}
-	\begin{itemize}
-		\resitem{Successfully passed Fundamentals of Engineering Exam, the first step towards becoming a licensed engineer}
-	\end{itemize}
+        \ressubheading{Engineer in Training (EIT)}{Ohio}{Active}{September 2012}
+        \begin{itemize}
+                \resitem{Successfully passed Fundamentals of Engineering Exam, the first step towards becoming a licensed engineer}
+        \end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -394,7 +405,7 @@ Director of FAS Center for Systems Biology}
 \resheading{Professional Organizations}
 
 \begin{itemize}
-	\resitem{Tau Beta Pi Engineering Honor Society}
+        \resitem{Tau Beta Pi Engineering Honor Society}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -418,52 +429,52 @@ Director of FAS Center for Systems Biology}
 \resheading{Undergraduate Research}
 
 \begin{itemize}
-	
+        
 \item
-	\ressubheading{Rochester Institute of Technology}{Rochester, NY}{George Thurston: Physics}{May 2010 - August 2012}
-	\begin{itemize}
-		\resitem{Studied liquid crystal mixtures in the eye related to cataracts}
-		\resitem{Developed computer simulations and animations with Mathematica}
-		\resitem{Demonstrated how liquid crystal composition affects the refractive index of the eye}
-	 	\resitem{Validated simulations with experimental data}
-	 	\resitem{Prepared results for scientific publication}
-	\end{itemize}	
-	
+        \ressubheading{Rochester Institute of Technology}{Rochester, NY}{George Thurston: Physics}{May 2010 - August 2012}
+        \begin{itemize}
+                \resitem{Studied liquid crystal mixtures in the eye related to cataracts}
+                \resitem{Developed computer simulations and animations with Mathematica}
+                \resitem{Demonstrated how liquid crystal composition affects the refractive index of the eye}
+                \resitem{Validated simulations with experimental data}
+                \resitem{Prepared results for scientific publication}
+        \end{itemize}   
+        
 \item
-	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Jesse Berezovsky: Physics}{Aug 2010 - May 2012}
-	\begin{itemize}
-		\resitem{Examined control of optically active nanocrystal quantum dots (QDs) at room temperature using microscopic ferromagnet magnetization dynamics}
-		\resitem{Studied novel combinations of QDs and microscopic ferromagnets using the ``Object Oriented Micro-Magnetic Framework'' developed by National Institute of Standards and Technology}
-		\resitem{Analyzed data from simulations with Matlab and other Linux-based tools}
-		\resitem{Created custom animations to visualize simulations}
-		\resitem{Identified ferromagnet-spin interactions relevant to room-temperature quantum computing}
-		
-	\end{itemize}
+        \ressubheading{Case Western Reserve University}{Cleveland, OH}{Jesse Berezovsky: Physics}{Aug 2010 - May 2012}
+        \begin{itemize}
+                \resitem{Examined control of optically active nanocrystal quantum dots (QDs) at room temperature using microscopic ferromagnet magnetization dynamics}
+                \resitem{Studied novel combinations of QDs and microscopic ferromagnets using the ``Object Oriented Micro-Magnetic Framework'' developed by National Institute of Standards and Technology}
+                \resitem{Analyzed data from simulations with Matlab and other Linux-based tools}
+                \resitem{Created custom animations to visualize simulations}
+                \resitem{Identified ferromagnet-spin interactions relevant to room-temperature quantum computing}
+                
+        \end{itemize}
 \item
-	\ressubheading{Princeton Plasma Physics Laboratory}{Princeton, NJ}{Harry Mynick: Theory and Computation Department}{May 2011 - Aug 2011}
-	\begin{itemize}	
-		\resitem{Participated in ``Science Undergraduate Laboratory Internship'' through Department of Energy}
-		\resitem{Designed graphical front end for previously developed Mathematica program that calculated important plasma physics quantities}
-		\resitem{Utilized state-of-the-art computer cluster for scientific computing}
-		\resitem{Distributed redesigned program to plasma physicists for broad usage}		
-	\end{itemize}	
+        \ressubheading{Princeton Plasma Physics Laboratory}{Princeton, NJ}{Harry Mynick: Theory and Computation Department}{May 2011 - Aug 2011}
+        \begin{itemize} 
+                \resitem{Participated in ``Science Undergraduate Laboratory Internship'' through Department of Energy}
+                \resitem{Designed graphical front end for previously developed Mathematica program that calculated important plasma physics quantities}
+                \resitem{Utilized state-of-the-art computer cluster for scientific computing}
+                \resitem{Distributed redesigned program to plasma physicists for broad usage}                
+        \end{itemize}   
 
 \item
-	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Corbin Covault: Physics}{Sep 2009 - May 2010}
-	\begin{itemize}
-		\resitem{Identified faulty equipment at the Pierre Auger Cosmic Ray Observatory by analyzing data collected by 1600 Cherenkov surface detectors}
-		\resitem{Created programs to monitor detector performance in real time} 
-		\resitem{Used findings to design improved surface detectors being built at ``Northern Auger Site'' in Colorado}
-	\end{itemize}
+        \ressubheading{Case Western Reserve University}{Cleveland, OH}{Corbin Covault: Physics}{Sep 2009 - May 2010}
+        \begin{itemize}
+                \resitem{Identified faulty equipment at the Pierre Auger Cosmic Ray Observatory by analyzing data collected by 1600 Cherenkov surface detectors}
+                \resitem{Created programs to monitor detector performance in real time} 
+                \resitem{Used findings to design improved surface detectors being built at ``Northern Auger Site'' in Colorado}
+        \end{itemize}
 
 \item
-	\ressubheading{Case Western Reserve University}{Cleveland, OH}{Mark Gridley: SAGES department}{Jan 2009 - Aug 2009}
-	\begin{itemize}
-		\resitem{Designed a psychology study examining cross-modal perception of music}
-		\resitem{Administered study to over 50 participants and analyzed results}
-		\resitem{Co-authored a paper that was subsequently published in a peer-reviewed journal}
-	\end{itemize}	
-	
+        \ressubheading{Case Western Reserve University}{Cleveland, OH}{Mark Gridley: SAGES department}{Jan 2009 - Aug 2009}
+        \begin{itemize}
+                \resitem{Designed a psychology study examining cross-modal perception of music}
+                \resitem{Administered study to over 50 participants and analyzed results}
+                \resitem{Co-authored a paper that was subsequently published in a peer-reviewed journal}
+        \end{itemize}   
+        
 \end{itemize}
 
 \resheading{Undergraduate Awards}
@@ -471,78 +482,78 @@ Director of FAS Center for Systems Biology}
 \begin{itemize}
 
 \item
-	\ressubheading{Case Alumni Association Prize}{Cleveland, OH}{Case Western Reserve University}{5/2012}
-	\begin{itemize}
-		\resitem{
-	Awarded to the graduating senior with the best academic record in the Case Western School of Engineering.
-		}
-	\end{itemize}
+        \ressubheading{Case Alumni Association Prize}{Cleveland, OH}{Case Western Reserve University}{5/2012}
+        \begin{itemize}
+                \resitem{
+        Awarded to the graduating senior with the best academic record in the Case Western School of Engineering.
+                }
+        \end{itemize}
 
 \item
-	\ressubheading{Elmer C. Stewart Memorial Award}{Cleveland, OH}{Case Western Reserve University}{5/2012}
-	\begin{itemize}
-		\resitem{
-	Awarded to an outstanding senior in Physics who has demonstrated achievement in the applications of physics.
-		}
-	\end{itemize}
+        \ressubheading{Elmer C. Stewart Memorial Award}{Cleveland, OH}{Case Western Reserve University}{5/2012}
+        \begin{itemize}
+                \resitem{
+        Awarded to an outstanding senior in Physics who has demonstrated achievement in the applications of physics.
+                }
+        \end{itemize}
 
 \item
-	\ressubheading{B.S. Chandrasekhar Prize}{Cleveland, OH}{Case Western Reserve University}{5/2011}
-	\begin{itemize}
-		\resitem{
-	Received for demonstrating superior performance in physics.
-		}
-	\end{itemize}
+        \ressubheading{B.S. Chandrasekhar Prize}{Cleveland, OH}{Case Western Reserve University}{5/2011}
+        \begin{itemize}
+                \resitem{
+        Received for demonstrating superior performance in physics.
+                }
+        \end{itemize}
 
 
 \item
-	\ressubheading{Rochester Engineering Society Scholarship}{Rochester, NY}{Rochester Engineering Society}{5/2011}
-	\begin{itemize}
-		\resitem{
-	Merit-based award recognizing outstanding engineering, engineering technology, science, or technology students from the Rochester area.
-		}
-	\end{itemize}
+        \ressubheading{Rochester Engineering Society Scholarship}{Rochester, NY}{Rochester Engineering Society}{5/2011}
+        \begin{itemize}
+                \resitem{
+        Merit-based award recognizing outstanding engineering, engineering technology, science, or technology students from the Rochester area.
+                }
+        \end{itemize}
 
 \item
-	\ressubheading{Outstanding Junior Award}{Cleveland, OH}{Case Western Reserve University}{5/2011}
-	\begin{itemize}
-		\resitem{
-	Awarded to juniors with the best academic record at the end of five semesters in the Case School of Engineering.
-		}
-	\end{itemize}
-	
+        \ressubheading{Outstanding Junior Award}{Cleveland, OH}{Case Western Reserve University}{5/2011}
+        \begin{itemize}
+                \resitem{
+        Awarded to juniors with the best academic record at the end of five semesters in the Case School of Engineering.
+                }
+        \end{itemize}
+        
 \item
-	\ressubheading{National Edward O'Connor Scholarship}{Cleveland, OH}{Aerospace States Association}{8/2010}
-	\begin{itemize}
-		\resitem{
-	Awarded to enterprising and innovative students planning to pursue career in Aerospace Engineering; only two scholarships given in the nation.
-		}
-	\end{itemize}		
+        \ressubheading{National Edward O'Connor Scholarship}{Cleveland, OH}{Aerospace States Association}{8/2010}
+        \begin{itemize}
+                \resitem{
+        Awarded to enterprising and innovative students planning to pursue career in Aerospace Engineering; only two scholarships given in the nation.
+                }
+        \end{itemize}           
 
 \item
-	\ressubheading{Case Alumni Scholarship}{Cleveland, OH}{Case Western Reserve University}{5/2010}
-	\begin{itemize}
-		\resitem{
-	Competitive award given to undergraduates pursuing degree related to applied science.
-		}
-	\end{itemize}	
+        \ressubheading{Case Alumni Scholarship}{Cleveland, OH}{Case Western Reserve University}{5/2010}
+        \begin{itemize}
+                \resitem{
+        Competitive award given to undergraduates pursuing degree related to applied science.
+                }
+        \end{itemize}   
 
 \item
-	\ressubheading{Outstanding Sophomore Award}{Cleveland, OH}{Case Western Reserve University}{5/2010}
-	\begin{itemize}
-		\resitem{
-	Awarded to sophomores with the best academic record at the end of three semesters in the Case School of Engineering.
-		}
-	\end{itemize}
+        \ressubheading{Outstanding Sophomore Award}{Cleveland, OH}{Case Western Reserve University}{5/2010}
+        \begin{itemize}
+                \resitem{
+        Awarded to sophomores with the best academic record at the end of three semesters in the Case School of Engineering.
+                }
+        \end{itemize}
 
 \item
-	\ressubheading{Provost's Scholarship}{Cleveland, OH}{Case Western Reserve University}{8/2008}
-	\begin{itemize}
-		\resitem{
-	Received when entering Case Western Reserve University based on high-school accomplishments (was high school valedictorian of class of 598 students).
-		}
-	\end{itemize}	
-	
+        \ressubheading{Provost's Scholarship}{Cleveland, OH}{Case Western Reserve University}{8/2008}
+        \begin{itemize}
+                \resitem{
+        Received when entering Case Western Reserve University based on high-school accomplishments (was high school valedictorian of class of 598 students).
+                }
+        \end{itemize}   
+        
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
