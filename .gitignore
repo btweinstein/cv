@@ -8,3 +8,10 @@
 *aux*
 *bbl*
 *blg*
+*.bcf
+*.log
+*.out
+*.gz
+*.bst
+*~
+*.xml
