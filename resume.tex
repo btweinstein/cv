@@ -31,6 +31,7 @@ pdfsubject={CV},
 %\usepackage{natbib}
 %\bibliographystyle{unsrt}
 
+\usepackage{enumitem}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -55,8 +56,13 @@ pdfsubject={CV},
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\skillitem}[1]{ \item #1  \vspace{-3pt}}
+\newcommand{\skillitem}[1]{ \item{#1}  \vspace{-3pt}}
 \newcommand{\skillheader}[1]{ \item \textbf{#1}  \vspace{-7pt}}
+
+
+\newlist{myitemize}{itemize}{2}
+\setlist[myitemize, 1]{leftmargin=*, labelindent=17pt, labelsep=11pt, label=\textbullet}
+\setlist[myitemize, 2]{label=\normalfont\bfseries \textendash, labelsep=5pt, leftmargin=17pt}
 
 \newcommand{\resheading}[1]
 {
@@ -70,7 +76,6 @@ pdfsubject={CV},
         }
         \vspace{-11pt}
 }
-        
 
 %I kind of cheat here to make the bullets go where I want.
 \newcommand{\ressubheading}[4]{\vspace{-14pt}
@@ -105,6 +110,8 @@ pdfsubject={CV},
                 \textbf{#1} & #2 
 \end{tabular*}\vspace{-8pt}}
 
+%\newlist{inlinelist}{itemize}{1}
+%\setlist[inlinelist,1]{leftmargin=*,labelindent=60pt, labelindent=17pt}
 
 % The inputs here are: Name (Dr. something), position, affiliation, relationship to me, web page, email, phone number
 
@@ -157,7 +164,7 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \begin{itemize}
 \resitem{Working Thesis Title: \textit{Microbial Evolutionary Dynamics and Transport}}
 \resitem{Applied stochastic, random-walk methods (spatial stochastic differential equations) to model the evolutionary dynamics of growing microbial colonies}
-\resitem{Utilized fluid and solid mechanics to model and simulate microbial colony morphology}
+\resitem{Utilized fluid and solid mechanics to simulate microbial colony morphology}
 
 \end{itemize}
 
@@ -186,57 +193,57 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Computational Skills}
 
-\begin{itemize}
+\begin{myitemize}
 
-\skillitem{During my PhD, I developed over 30 GitHub repositories and wrote hundreds of Jupyter/IPython notebooks to analyze my experimental data and to create scientific simulations (see my website above)}
+\skillitem{Developed over 30 GitHub repositories and wrote hundreds of Jupyter/IPython notebooks to create scientific simulations and analyze my experimental data  during my PhD (see my website above)}
 
 \skillitem{Over 8 years of experience optimizing programs to run on multiple processors, graphics processing units (GPUs), and supercomputers}
 
-\skillitem{Expert knowledge of stochastic techniques to model and solve high-dimensional problems}
+\skillitem{Expert at using Jupyter/IPython Notebooks to explore, visualize, and analyze large tabular datasets and large collections of images}
 
-\skillitem{Used Jupyter/IPython Notebooks almost every day of my PhD to analyze, visualize, and explore my experimental data}
+\skillitem{Experienced at applying stochastic techniques to model and solve high-dimensional problems}
 
 \skillheader{Languages for General Scientific Computing:}
-\begin{itemize}
-\skillitem{Python, Cython, OpenCL, CUDA, C, C++, Java, Matlab, Mathematica}
-\end{itemize}
+\begin{myitemize}
+\skillitem{Python, Cython, OpenCL, CUDA, C, C++, Java, Mathematica, Matlab}
+\end{myitemize}
 
 \skillheader{Selected Python Packages and Tools:}
-\begin{itemize}
+\begin{myitemize}
 \skillitem{IPython/Jupyter Notebook, matplotlib, seaborn, numpy, scipy, pandas, scikit-image, pymc3, cython, cython\_gsl, PyOpenCL, PyCuda}
-\end{itemize}
+\end{myitemize}
 
 \skillheader{Fluid and Solid Mechanics Simulations:}
-\begin{itemize}
+\begin{myitemize}
 \skillitem{Lattice Boltzmann Method (custom-built code), OpenFOAM, SALOME, gmsh}
-\end{itemize}        
+\end{myitemize}        
 
 \skillheader{Image Analysis Tools}
-\begin{itemize}
-\resitem{ImageJ, Python, OpenCL, OMERO}
-\end{itemize}
+\begin{myitemize}
+\resitem{Python, OpenCL, ImageJ/Fiji}
+\end{myitemize}
              
-\end{itemize}
+\end{myitemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \resheading{Analytical and Experimental Skills}
 
-\begin{itemize}
+\begin{myitemize}
 
 \skillheader{Analytical}
-\begin{itemize}
-\skillitem{Expert at creating simple mathematical models to describe physical phenomena}
-\skillitem{Expert knowledge of Applied Mathematics, especially stochastic modeling involving the Master equation, the Fokker Planck equation (PDEs), and (spatial) stochastic differential equations}
-\end{itemize}
+\begin{myitemize}
+\skillitem{My training as physicist allows me to efficiently create and calibrate mathematical models to data}
+\skillitem{Expert knowledge of Applied Mathematics, especially stochastic modeling involving the Master equation, the Fokker-Planck equation (PDEs), and (spatial) stochastic differential equations}
+\end{myitemize}
 
 \skillheader{Experimental}
-\begin{itemize}
+\begin{myitemize}
 \resitem{4 years of research in an experimental molecular biology laboratory; experienced at designing and conducting experiments} 
 \resitem{Significant experience using microscopy to image microbes}
-\end{itemize}
+\end{myitemize}
 
-\end{itemize}
+\end{myitemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -300,14 +307,14 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Conferences and Invited Presentations}
+%\resheading{Conferences and Invited Presentations}
 
-\renewcommand{\refname}{\vspace*{-12mm}}
+%\renewcommand{\refname}{\vspace*{-12mm}}
 
-\begin{refsection}[Conferences]
-\nocite{*}
-\printbibliography
-\end{refsection}
+%\begin{refsection}[Conferences]
+%\nocite{*}
+%\printbibliography
+%\end{refsection}
 
 
 
