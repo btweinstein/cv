@@ -55,6 +55,8 @@ pdfsubject={CV},
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\skillitem}[1]{ \item #1  \vspace{-3pt}}
+\newcommand{\skillheader}[1]{ \item \textbf{#1}  \vspace{-7pt}}
 
 \newcommand{\resheading}[1]
 {
@@ -66,7 +68,7 @@ pdfsubject={CV},
                 \textbf{#1 \vphantom{p\^{E}}}}
         \end{minipage}}
         }
-        \vspace{-9pt}
+        \vspace{-11pt}
 }
         
 
@@ -154,9 +156,8 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \item \ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}     
 \begin{itemize}
 \resitem{Working Thesis Title: \textit{Microbial Evolutionary Dynamics and Transport}}
-\resitem{Developed over 30 GitHub repositories and wrote thousands of IPython/Jupyter notebooks to analyze experimental data and to create scientific simulations (see my website)}
 \resitem{Applied stochastic, random-walk methods (spatial stochastic differential equations) to model the evolutionary dynamics of growing microbial colonies}
-\resitem{Utilized fluid and solid mechanics to model and simulate colony morphology}
+\resitem{Utilized fluid and solid mechanics to model and simulate microbial colony morphology}
 
 \end{itemize}
 
@@ -165,7 +166,7 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \begin{itemize}                   
 \resitem{Completed four advanced applied math and scientific computing courses}
 \resitem{Learned state-of-the-art computational methods used in scientific research and data science}
-\resitem{\textbf{Capstone:} Wrote proposal and won a \$25,000 student scholarship to develop a GPU-powered Lattice Boltzmann fluid mechanics simulation utilizing OpenGL for real-time visualization}
+\resitem{\textbf{Capstone:} Developed an OpenCL powered Lattice Boltzmann fluid mechanics simulation utilizing OpenGL for real-time visualization. }
 \end{itemize}     
               
 \item \ressubheading{Harvard University}{Cambridge, MA}{S.M. in Applied Physics}{November 2014}
@@ -187,26 +188,30 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 
 \begin{itemize}
 
-\resitem{Over 8 years of experience optimizing programs to run on multiple processors, graphics processing units (GPUs), and supercomputers}
-        
-\resitem{Expert knowledge of stochastic and probabilistic methods to solve high-dimensional problems}
+\skillitem{During my PhD, I developed over 30 GitHub repositories and wrote hundreds of Jupyter/IPython notebooks to analyze my experimental data and to create scientific simulations (see my website above)}
 
-\resitem{\textbf{Languages for General Scientific Computing:}} 
+\skillitem{Over 8 years of experience optimizing programs to run on multiple processors, graphics processing units (GPUs), and supercomputers}
+
+\skillitem{Expert knowledge of stochastic techniques to model and solve high-dimensional problems}
+
+\skillitem{Used Jupyter/IPython Notebooks almost every day of my PhD to analyze, visualize, and explore my experimental data}
+
+\skillheader{Languages for General Scientific Computing:}
 \begin{itemize}
-\resitem{Python, Cython, OpenCL, CUDA, C, C++, Java, Matlab, Mathematica}
+\skillitem{Python, Cython, OpenCL, CUDA, C, C++, Java, Matlab, Mathematica}
 \end{itemize}
 
-\resitem{\textbf{Selected Python Packages and Tools:}}
+\skillheader{Selected Python Packages and Tools:}
 \begin{itemize}
-\resitem{IPython/Jupyter Notebook, matplotlib, seaborn, numpy, scipy, pandas, scikit-image, pymc3, cython, cython\_gsl, PyOpenCL, PyCuda}
+\skillitem{IPython/Jupyter Notebook, matplotlib, seaborn, numpy, scipy, pandas, scikit-image, pymc3, cython, cython\_gsl, PyOpenCL, PyCuda}
 \end{itemize}
 
-\resitem{Fluid and Solid Mechanics Simulations:}
+\skillheader{Fluid and Solid Mechanics Simulations:}
 \begin{itemize}
-\resitem{Lattice Boltzmann Method (custom-built code), OpenFOAM, SALOME, gmsh}
+\skillitem{Lattice Boltzmann Method (custom-built code), OpenFOAM, SALOME, gmsh}
 \end{itemize}        
 
-\resitem{Image Analysis Tools:}
+\skillheader{Image Analysis Tools}
 \begin{itemize}
 \resitem{ImageJ, Python, OpenCL, OMERO}
 \end{itemize}
@@ -214,26 +219,60 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Analytical Skills}
+\clearpage
+\resheading{Analytical and Experimental Skills}
 
 \begin{itemize}
 
-
-\item \award{Analytical and Laboratory Skills}{}
+\skillheader{Analytical}
 \begin{itemize}
-
-\resitem{Over 7 years of experience creating simple mathematical models to describe physical phenomena}
-\resitem{Expert knowledge of Applied Mathematics, especially stochastic modeling involving the Master equation, the Fokker Planck equation (PDEs), and (spatial) stochastic differential equations}
-%\resitem{Equilibrium and nonequilibrium statistical physics techniques}
+\skillitem{Expert at creating simple mathematical models to describe physical phenomena}
+\skillitem{Expert knowledge of Applied Mathematics, especially stochastic modeling involving the Master equation, the Fokker Planck equation (PDEs), and (spatial) stochastic differential equations}
 \end{itemize}
-\item \award{Laboratory}{}
+
+\skillheader{Experimental}
 \begin{itemize}
 \resitem{4 years of research in an experimental molecular biology laboratory; experienced at designing and conducting experiments} 
 \resitem{Significant experience using microscopy to image microbes}
-
 \end{itemize}
 
 \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Fellowships and Awards}
+
+\begin{itemize}
+
+\item \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Graduate Student}{September 2016 - September 2017}
+
+\begin{itemize}
+\resitem{Wrote proposal and won a \$25,000 student scholarship from Harvard's Institute for Applied Computational Science (IACS)}
+
+\resitem{Used funds to further develop my IACS capstone: an OpenCL-powered Lattice Boltzmann fluid mechanics simulator utilizing OpenGL for real-time visualization}
+
+\end{itemize}
+
+
+\item \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
+
+\begin{itemize}
+
+\resitem{Wrote proposal to win a competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE). Selected out of 1,300 applicants; 50 fellowships awarded}
+\resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
+                
+\end{itemize}
+
+\item \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
+
+\begin{itemize}
+                
+\resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS). Selected out of 150 students; 8 fellowships awarded}
+                                
+\end{itemize}
+
+\end{itemize}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Certifications}
@@ -247,35 +286,6 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Fellowships and Awards}
-
-\begin{itemize}
-
-\item \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Graduate Student}{September 2016 - September 2017}
-
-
-\item \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
-
-\begin{itemize}
-
-\resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE).}
-\resitem{Selected out of 1,300 applicants; 50 fellowships awarded}
-\resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
-                
-\end{itemize}
-
-\item \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
-
-\begin{itemize}
-                
-\resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS).}
-\resitem{Selected out of 150 students; 8 fellowships awarded.}
-                                
-\end{itemize}
-
-\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
