@@ -11,3 +11,8 @@ ls *blx* >> .hidden
 ls *.out* >> .hidden
 ls *.synctex.* >> .hidden
 ls *.bak >> .hidden
+ls *.gz >> .hidden
+ls *.xml >> .hidden
+ls *.bcf >> .hidden
+ls *.out >> .hidden
+ls *.log >> .hidden
