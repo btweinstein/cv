@@ -1,0 +1,21 @@
+* Led a team to design a next-gen c4 prototype that combines real / simulated data
+	* Django, docker, microservice based architecture, rest APIs, redis, Kafka
+* Created simulations & designed experiments to extract useful information for senior stakeholders and presented to them
+* Led teams, small and large, younger and older, to execute critical tasks for senior goverment stakeholders
+* Analyzed data from simulations and extracted visuals / lessons learned to teach goverment +
+* Pioneered use of docker-based CI/CD pipelines for GOTS software 
+* Member of CUIC: cross-cutting urgen innovation cell. Focused on speed of execution and delivery of the highest quality content to goverment stakeholders. Supposed to help cultural revolution in MITRE.
+* Mentored staff
+* Presented at key meetings showcasing MITRE's R&D program 
+* Led years of IR&D programs developing capabilities and new ideas focused on command and control
+* Attended GOTS conferences illustrating new ways to use the software
+* Started AFSIM usergroup
+* Develop new capabilities, use them to extract / show senior stakeholders key info
+* Utilized knowledge of stochastic processes, DOE, and training analyzing data to build simulations to extract information and present it to key members across the goverment. 
+* Managed millions of dollars of IR&D funding and direct sponsor money to staff and execute tasks
+
+=== Bullets ===
+
+* Worked as part of CUIC: the Cross-Cutting Urgent Innovation Cell, focused on rapidly developing innovative solutions to whole-of-goverment National Security problems and presenting them to senior goverment stakeholders and delivering maximum impact
+* Utilized PhD experience in modeling and simulation, stochastic processes, engineering, and data science to extract key insights from open-source (GOTS) goverment simulation tools and present them to senior goverment stakeholders
+* Based on key insights, led teams to build prototypes that could help to solve goverment problems
