@@ -85,6 +85,16 @@ pdfsubject={CV},
                 \textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
+%I define a new block for MITRE since I got promoted
+\newcommand{\ressubheadingmitre}[6]{\vspace{-29pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+				\vspace{15pt} % horrible hack to get things lined up
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
+                \textit{#5} & \textit{#6}
+\end{tabular*}\vspace{-6pt}}
+
 % Instead of defining a general command, I define a silly
 % specific one
 
@@ -99,7 +109,7 @@ pdfsubject={CV},
                 \textit{#7} & \textit{#8} \\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\resbelowsubheading}[2]{\vspace{-14pt}
+\newcommand{\resbelowsubheading}[2]{\vspace{-40pt}
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
                 \\
                 \textit{#1} & \textit{#2} \\
@@ -154,6 +164,18 @@ Walpole, MA 02081 &    \href{mailto:\emailAddress}{\emailAddress} \\
 \\
 
 \vspace{0.1in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Work Experience}
+
+\begin{itemize}
+\item \ressubheadingmitre{MITRE}{Bedford, MA}{Lead Modeling \& Simulation Engineer}{April 2021 - Present}{Senior Modeling \& Simulation Engineer}{August 2018 - April 2021}
+\begin{itemize}
+\item Created simulations to 
+\end{itemize}
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
