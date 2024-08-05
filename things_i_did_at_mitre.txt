@@ -6,16 +6,18 @@
 * Pioneered use of docker-based CI/CD pipelines for GOTS software 
 * Member of CUIC: cross-cutting urgen innovation cell. Focused on speed of execution and delivery of the highest quality content to goverment stakeholders. Supposed to help cultural revolution in MITRE.
 * Mentored staff
-* Presented at key meetings showcasing MITRE's R&D program 
+* Presented at key meetings showcasing MITRE's R&D program to hundreds of sponsors
 * Led years of IR&D programs developing capabilities and new ideas focused on command and control
 * Attended GOTS conferences illustrating new ways to use the software
-* Started AFSIM usergroup
+* Started AFSIM usergroup; 400 members currently
 * Develop new capabilities, use them to extract / show senior stakeholders key info
 * Utilized knowledge of stochastic processes, DOE, and training analyzing data to build simulations to extract information and present it to key members across the goverment. 
 * Managed millions of dollars of IR&D funding and direct sponsor money to staff and execute tasks
 
 === Bullets ===
 
-* Worked as part of CUIC: the Cross-Cutting Urgent Innovation Cell, focused on rapidly developing innovative solutions to whole-of-goverment National Security problems and presenting them to senior goverment stakeholders and delivering maximum impact
-* Utilized PhD experience in modeling and simulation, stochastic processes, engineering, and data science to extract key insights from open-source (GOTS) goverment simulation tools and present them to senior goverment stakeholders
-* Based on key insights, led teams to build prototypes that could help to solve goverment problems
+* Rapidly developed innovative solutions to whole-of-goverment National Security problems utilizing modeling, simulation, data science, and protoptying skills developed during Physics PhD and Computational Science minor
+* Presented results to senior goverment stakeholders across the DOD to deliver maximum impact
+* Mentored 10s of staff and led small to lage teams to produce high quality and timely deliverables for goverment stakeholders (one of the first members of CUIC: Cross-Cutting Urgent Innovation Cell)
+* Recognized as one of MITRE's most experienced AFSIM developers (popular GOTS M&S software); started MITRE's AFSIM usergroup 6 years ago that now has over 400 members, and developed widely used MITRE repositories
+* Led over 2 million dollars in IR&D funding over 4 years to build a next-gen-C4 prototype that could be tested by real, simulated, or live data before deployment. Presented multiple times at MITRE R&T meetings (100's of goverment sponsors). Work is continuing under ACCEL C2 lab; asking for 8 million dollar investment in physical space from MITRE leadership.
