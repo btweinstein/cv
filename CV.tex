@@ -17,6 +17,8 @@
 \usepackage[empty]{fullpage}
 \usepackage{color}
 
+\usepackage{tabularx}
+
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=true,
@@ -27,7 +29,7 @@ pdfsubject={CV},
 }
 
 \usepackage{fancyhdr}
-\usepackage[backend=biber,sorting=ynt,style=numeric,minbibnames=2]{biblatex}
+\usepackage[backend=biber,sorting=ydnt,style=numeric,minbibnames=2]{biblatex}
 %\usepackage{natbib}
 %\bibliographystyle{unsrt}
 
@@ -144,16 +146,45 @@ Brighton, MA 02135 &    \href{mailto:\emailAddress}{\emailAddress} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\resheading{Work Experience}
+
+\begin{itemize}
+\item  \ressubheading{MITRE}{Bedford, MA}{Senior Modeling and Simulation Engineer/Analyst}{September 2018}
+
+\begin{itemize}
+\item \textbf{September 2018 - October 1st 2019}
+
+\begin{itemize}
+\resitem{Recruited many students for MITRE at career fairs through academic engagement, and drew people to CUIC team (at least 3 people hired or interned; Nathan Einstein, Min Kim, Kevin Weinstein). Played an active role on many interview panels.}
+\resitem{Helped to start a relationship between Harvard's Institute for Applied and Computational Sciences (IACS) and MITRE, especially CUIC. That will be a great pool of talent for students in the future. We got Nathan Einstein, and we may get David Zhang.}
+\resitem{Identified that the technical approach to enable experimentation for the MDC2 Functional Architecture project did not seem to be working and consequently led a small team with a very tight deadline to recreate it in AFSIM. The approach seems to be bearing fruit, and we are able to conduct experiments. Hopefully we will be able to get operators in the loop to play with the prototype.}
+\resitem{Worked with individuals outside CUIC to pioneer the approach to link AFSIM to Reinforcement Learning algorithms to enable machine learning experimentation.}
+\resitem{Learned AFSIM with no prior knowledge before MITRE and then started the AFSIM user community at MITRE. Helped create a website, have biweekly meetings with presentations, and made this an core part of Bob Coury's Effects Chain Analysis Platform (ECAP). Positioned CUIC at the center of this effort. The group now contains over 150 members across MITRE.}
+\resitem{Became much more comfortable talking to sponsors. The highlight was probably giving the MDC2 flip the script talk to Preston Dunlap, Chief Architect of the Airforce, and the AFWIC general. The talk seemed well received. Also flew out to DC to give a similar high pressure talk to a Board of Trustees member. Also gave a similar MDC2 Experimentation talk to members from the Chief Architect's office.}
+\resitem{Gave talk at AFSIM Usergroup meeting in Ohio about MITRE Platforms / MDC2 Base Types, spread information about MITRE's work. MITRE now plays a lead role in AFSIM's standard's working group.}
+\resitem{Mentored Fiona Henry and Min Kim, two young undergraduates, and helped them play an important role on projects very quickly.}
+\resitem{Maintained S/TS security clearance; going up for SCI now.}
+\resitem{Created a Python software package utilizing the MAKO templating language to change many parameters in AFSIM experiments.}
+\resitem{Created a Python library to simulate abstract wargames for the BIGMAC project}
+\resitem{Created a repository of unclassified blue platforms in AFSIM that are used throughout CUIC to support AFSIM experimentation and may be distributed outside of MITRE. More generally, helped maintain and develop synergy between members of CUIC by developing and maintaining online repositories}
+\end{itemize}     
+
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \resheading{Education}
 
 \begin{itemize}
 \item
-\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{Expected May 2018}     
+\ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{May 2018}     
 
 \begin{itemize}
-\resitem{Working Thesis Title: \textit{Microbial Evolutionary Dynamics and Transport}}
+\resitem{Thesis Title: \textit{Microbial Evolutionary Dynamics and Transport on Solid and Liquid Substrates}}
 \resitem{Advisors:}
-
 \begin{itemize}
 \resitem{\href{http://www.seas.harvard.edu/directory/nelson}{David R. Nelson}: Professor of Physics and Applied Physics, Solomon Professor of Biophysics}
 \resitem{\href{https://www.mcb.harvard.edu/mcb/faculty/profile/andrew-w-murray/}{Andrew W. Murray}: Herschel Smith Professor of Molecular Genetics,
@@ -161,9 +192,15 @@ Professor of Molecular and Cellular Biology,
 Director of FAS Center for Systems Biology}
 \end{itemize}
 
+\resitem{Additional members of thesis committee:}
+\begin{itemize}
+\resitem{Christopher Rycroft}
+\resitem{Michael Brenner}
 \end{itemize}
 
-\item \ressubheading{Harvard University}{Cambridge, MA}{PhD Secondary Field: Computational Science and Engineering (CSE)}{Expected May 2018}           
+\end{itemize}
+
+\item \ressubheading{Harvard University}{Cambridge, MA}{PhD Secondary Field: Computational Science and Engineering (CSE)}{May 2018}           
 
 \begin{itemize}
 \resitem{Completed four advanced applied math and scientific computing courses}
@@ -199,8 +236,7 @@ Director of FAS Center for Systems Biology}
 
 \begin{itemize}
 
-\item
-        \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Graduate Student}{September 2016 - September 2017}
+\item \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Harvard University Graduate Student}{September 2016 - September 2017}
 
 \begin{itemize}
 \resitem{Wrote proposal and won a \$25,000 student scholarship from Harvard's Institute for Applied Computational Science (IACS)}
@@ -210,18 +246,21 @@ Director of FAS Center for Systems Biology}
                 
         \end{itemize}
 
-\item
-        \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
+\item \ressubheading{Certificate of Distinction in Teaching}{Cambridge, MA}{Bok Center, Harvard University}{September - May 2016}
+\begin{itemize}
+\item Won a teaching award based on my high reviews of "Introduction to Applied Mathematics" taught to undergraduates; obtained a 4.86/5.00
+\end{itemize}
 
-        \begin{itemize}
-                \resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE)}
-                \resitem{Selected out of 1,300 applicants; 50 fellowships awarded}
-                \resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
-                
-        \end{itemize}
+\item \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Harvard University Graduate Student}{September 2012 - September 2015}
+
+\begin{itemize}
+\resitem{Wrote proposal to win competitive fellowship supporting students pursuing training in areas relevant to Department of Energy (DOE)}
+\resitem{Selected out of 1,300 applicants; 50 fellowships awarded}
+\resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
+\end{itemize}
 
 \item
-        \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
+        \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Harvard University Graduate Student}{September 2012 - September 2015}
         \begin{itemize}
                 
                 \resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS)}
@@ -361,14 +400,18 @@ Director of FAS Center for Systems Biology}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Certifications}
+\resheading{Certifications / Clearances}
 
 \begin{itemize}
-\item
-        \ressubheading{Engineer in Training (EIT)}{Ohio}{Active}{September 2012}
-        \begin{itemize}
-                \resitem{Successfully passed Fundamentals of Engineering Exam, the first step towards becoming a licensed engineer}
-        \end{itemize}
+\item \ressubheading{Engineer in Training (EIT)}{Ohio}{Active}{September 2012}
+
+\begin{itemize}
+\resitem{Successfully passed Fundamentals of Engineering Exam, the first step towards becoming a licensed engineer}
+\end{itemize}
+
+\item \ressubheading{Secret Clearance}{MITRE, Bedford MA}{Active}{September 2018}
+\item \ressubheading{Interim Top Secret Clearance}{MITRE, Bedford MA}{Active}{April 2018}
+
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,9 +424,40 @@ Director of FAS Center for Systems Biology}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Teaching Experience}
+\begin{itemize}
+\item \ressubheading{Introduction to Applied Mathematics}{Harvard University}{Teaching Fellow}{September -- May 2016}
+
+\begin{itemize}
+\item Undergraduate course taught by Christopher Rycroft. I obtained a 4.86/5.00 on teaching reviews
+\item Won a teaching award, the Certificate of Distinction in Teaching from the Bok Center, for the high teaching reviews
+\end{itemize}
+
+\item \ressubheading{Statistical Physics}{Harvard University}{Teaching Fellow}{Fall 2017}
+\begin{itemize}
+\item Graduate course taught by David Nelson, my PhD advisor. I obtained a 4.35/5.00 on teaching reviews
+\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Outreach}
 
 \begin{itemize}
+\item \ressubheading{Adopt a Physicist}{\url{https://www.adoptaphysicist.org/}}{Classroom Discussion Facilitator}{October 2018}
+\begin{itemize}
+\item Answered questions about being a physicist to high school physics classes in an online forum
+\item Helped make students excited about physics
+\end{itemize}
+
+
+\item \ressubheading{\href{https://www.steminspiration.org/about-us}{STEM Inspiration Organization (SIO)}}{Newton, MA}{Interview}{October 2018}
+\begin{itemize}
+\item Participated in hour long interview to organization supporting high school students interesting in pursuing careers in STEM fields
+\item Discussed my career trajectory and life lessons that I learned along the way
+\item Transcript of interview can be seen \href{https://www.steminspiration.org/single-post/2018/10/23/Leaders-in-STEM-Interview-Publication-October-2018}{here}
+\end{itemize}
+
 \item
         \ressubheading{Science in the News Presentation}{Cambridge, MA}{Physics of Evolution}{November 2014}
         \begin{itemize}

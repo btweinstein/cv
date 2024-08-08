@@ -1,0 +1,49 @@
+* Led a team to design a next-gen c4 prototype that combines real / simulated data
+	* Django, docker, microservice based architecture, rest APIs, redis, Kafka
+* Created simulations & designed experiments to extract useful information for senior stakeholders and presented to them
+* Led teams, small and large, younger and older, to execute critical tasks for senior goverment stakeholders
+* Analyzed data from simulations and extracted visuals / lessons learned to teach goverment +
+* Pioneered use of docker-based CI/CD pipelines for GOTS software 
+* Member of CUIC: cross-cutting urgen innovation cell. Focused on speed of execution and delivery of the highest quality content to goverment stakeholders. Supposed to help cultural revolution in MITRE.
+* Mentored staff
+* Presented at key meetings showcasing MITRE's R&D program to hundreds of sponsors
+* Led years of IR&D programs developing capabilities and new ideas focused on command and control
+* Attended GOTS conferences illustrating new ways to use the software
+* Started AFSIM usergroup; 400 members currently
+* Develop new capabilities, use them to extract / show senior stakeholders key info
+* Utilized knowledge of stochastic processes, DOE, and training analyzing data to build simulations to extract information and present it to key members across the goverment. 
+* Managed millions of dollars of IR&D funding and direct sponsor money to staff and execute tasks
+
+=== Awards ===
+
+Applause: non-monetary
+Spark: $30 gift card: recognize for creating a spark in the organization
+Synergist: $125 pp: synergy in the owrkplace to help MITRE reach its goals and adhere to values
+Catalyst: $500 pp: recognize individuals for making stand-out contributions to enable MITRE's projecgts and programs to succeed
+Trailblazer: $4000 per team: recognize those who are willing ot take risks and overcome challenges as they work toward MITRE's mission
+Breakthrough: $10,000 per team: recognize exemplary developments or achievements that align with MITRE's values and behaviors
+PRA: ???
+
+
+Trailblazer: FA Deployment, Dec 20, 2023
+Spark Award: Longbow, Dec 31 2023
+Catalyst: DIL Prototype Demonstration. May 15th, 2023
+Trailblazer: D@S M&S Prototype, May 22, 2022
+Applause: NRO talking about AFSIM, March 17, 2022
+Spark Award: Merging FA and SBSS, Nove 2021
+Trailblazer: SFKC, October 15 2021
+Spark Award: SFKC, September 11, 2020
+Breakthrough Award: Chief's Challenge, 2020
+Spark Award: Linton Wells, establishing AFSIM infrastructure
+Spark Award: Sep 20, 2019, Academic Engagement
+Applause Award: August 28, 2019
+
+
+(5 sparks, 1 catalyst, 3 trailblazer, 1 breakthrough)
+=== Bullets ===
+
+* Rapidly developed innovative solutions to whole-of-goverment National Security problems utilizing modeling, simulation, data science, and protoptying skills developed during Physics PhD and Computational Science minor
+* Presented results to senior goverment stakeholders across the DOD to deliver maximum impact
+* Mentored 10s of staff and led small to lage teams to produce high quality and timely deliverables for goverment stakeholders (one of the first members of CUIC: Cross-Cutting Urgent Innovation Cell)
+* Recognized as one of MITRE's most experienced AFSIM developers (popular GOTS M&S software); started MITRE's AFSIM usergroup 6 years ago that now has over 400 members, and developed widely used MITRE repositories
+* Led over 2 million dollars in IR&D funding over 4 years to build a next-gen-C4 prototype that could be tested by real, simulated, or live data before deployment. Presented multiple times at MITRE R&T meetings (100's of goverment sponsors). Work is continuing under ACCEL C2 lab; asking for 8 million dollar investment in physical space from MITRE leadership.
