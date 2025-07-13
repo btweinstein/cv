@@ -1,0 +1,415 @@
+% CV.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David tJ. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2012-2014 Bryan T. Weinstein <btweinstein@gmail.com> http://people.seas.harvard.edu/~bweinstein/
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%%%% Define various commands %%%%%%%
+
+\newcommand{\emailAddress}{btweinstein@gmail.com}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+urlcolor=black,
+pdftitle={Bryan T. Weinstein's Data Science Resume},
+pdfauthor={Bryan T. Weinstein},
+pdfsubject={CV},
+}
+
+\usepackage{fancyhdr}
+\usepackage[backend=biber,sorting=ynt,style=numeric,minbibnames=2,language=american]{biblatex}
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+
+\usepackage{enumitem}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footskip}{15pt}
+\lfoot{\emph{\small{Bryan T. Weinstein}}}
+\rfoot{\emph{\small{Fall 2024}}}
+\fancyfootoffset{.2in}
+
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\skillitem}[1]{ \item{#1}  \vspace{-3pt}}
+\newcommand{\skillheader}[1]{ \item \textbf{#1}  \vspace{-7pt}}
+
+
+\newlist{myitemize}{itemize}{2}
+\setlist[myitemize, 1]{leftmargin=*, labelindent=17pt, labelsep=11pt, label=\textbullet}
+\setlist[myitemize, 2]{label=\normalfont\bfseries \textendash, labelsep=5pt, leftmargin=17pt}
+
+\newcommand{\resheading}[1]
+{
+        \vspace{2pt}
+        \phantomsection
+        \addcontentsline{toc}{section}{#1}
+        {\large \colorbox{mygrey}{
+        \begin{minipage}{\textwidth}{
+                \textbf{#1 \vphantom{p\^{E}}}}
+        \end{minipage}}
+        }
+        \vspace{-11pt}
+}
+
+%I kind of cheat here to make the bullets go where I want.
+\newcommand{\ressubheading}[4]{\vspace{-14pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+%I define a new block for MITRE since I got promoted
+\newcommand{\ressubheadingmitre}[6]{\vspace{-29pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+				\vspace{15pt} % horrible hack to get things lined up
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
+                \textit{#5} & \textit{#6}
+\end{tabular*}\vspace{-6pt}}
+
+% Instead of defining a general command, I define a silly
+% specific one
+
+\newcommand{\educationsubheading}[8]{\vspace{-40pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+                \\
+                \\
+                \\
+                \textbf{#1} & #2 \\
+                \textit{#3} & \textit{#4} \\
+                \textit{#5} & \textit{#6} \\
+                \textit{#7} & \textit{#8} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\resbelowsubheading}[2]{\vspace{-40pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+                \\
+                \textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\award}[2]{\vspace{-5pt}
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+                \textbf{#1} & #2 
+\end{tabular*}\vspace{-8pt}}
+
+%\newlist{inlinelist}{itemize}{1}
+%\setlist[inlinelist,1]{leftmargin=*,labelindent=60pt, labelindent=17pt}
+
+% The inputs here are: Name (Dr. something), position, affiliation, relationship to me, web page, email, phone number
+
+\newcommand{\reference}[6]{
+\ressubheading{#1}{#2}{#3}{}
+\vspace{-1pt}
+\begin{itemize}
+        \resitem{\emph{Relationship}: #4}
+        \resitem{\emph{Email}: \href{mailto:#5}{#5}}
+        \resitem{\emph{Phone}: #6}
+\end{itemize}
+}
+
+%-----------------------------------------------------------
+
+\begin{document}
+
+%These are for my own use; they don't do anything.
+\title{Bryan T. Weinstein's CV}
+\author{Bryan T. Weinstein}
+\date{Fall 2015}
+
+\vspace{2pt}
+\phantomsection
+\addcontentsline{toc}{part}{Bryan T. Weinstein's Resume}
+
+
+\begin{center}
+\textbf{\Large{Bryan T. Weinstein}}
+\\
+\vspace{3pt}
+\large{Active TS/SCI Clearance}
+\vspace{-5pt}
+\end{center}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+9 Sigmund Way  &   (585) 738-0690  \\
+Walpole, MA 02081 &    \href{mailto:\emailAddress}{\emailAddress} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Work Experience}
+
+\begin{itemize}
+\item \ressubheadingmitre{MITRE}{Bedford, MA}{Lead Modeling \& Simulation Engineer}{April 2021 - Present}{Senior Modeling \& Simulation Engineer}{August 2018 - April 2021}
+\begin{itemize}
+\item Rapidly developed innovative solutions to national security problems spanning all domains utilizing modeling, simulation, engineering, data science, and prototyping skills
+
+\item Led Joint All-Domain Command and Control (JADC2) initiative inside division; conducted analyses and developed live-virtual-constructive (LVC) capabilities for sponsors across all services
+
+\item Presented results to senior government stakeholders across the DOD and MITRE executive leadership to deliver maximum impact
+
+\item Proposed and procured over two million dollars in internal research funding to build and deploy an all-domain next-gen C4 prototype; used prototype to solve directly funded government problems \begin{itemize}
+
+\item Tested prototype with all-domain AFSIM simulations in distributed live-virtual-constructive (LVC) experiments at the TS/SCI level
+\item Presented multiple times at MITRE Research and Technology (R\&T) meetings for hundreds of government sponsors
+\end{itemize}
+
+\item Mentored dozens of staff and led diverse teams of various sizes across classification levels to produce high quality and timely deliverables for government stakeholders
+
+\item Recognized as one of MITRE's most experienced AFSIM developers
+\begin{itemize}
+\item Created MITRE's AFSIM user group in 2018 that now has over 400 members
+\item Developed widely used MITRE repositories; presented at national AFSIM user group conferences 
+\end{itemize}
+
+\item Obtained and maintained TS/SCI clearance
+
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Selected MITRE Awards}
+
+
+\begin{itemize}
+
+\item \award{Trailblazer Award: Functional Architecture Deployment}{December 2023}
+
+\begin{itemize}
+\resitem{Awarded for demonstrating tenacity over the past five years; led a large team to enable distributed LVC experimentation at the classified level through a next-gen C4 prototype
+}
+\end{itemize}
+
+
+\item \award{Catalyst Award: CDAO Data Integration Layer Prototype Demonstration}{May 2023}
+\begin{itemize}
+\resitem{Awarded to team that delivered a prototype  of an API Gateway to the Chief Data and Artificial Intelligence Office (CDAO) in response to a quick-turn two week request}
+\end{itemize}
+
+\item \award{Trailblazer Award: Digital Twin JWICS deployment}{May 2022}
+\begin{itemize}
+\resitem{Given to our team for linking our next-gen C4 prototype to a classified dashboard using a series of Open APIs, and demonstrating this capability during MITRE's Research and Technology (R\&T) showcase to hundreds of government sponsors}
+\end{itemize}
+
+\item \award{Trailblazer Award: Self Forming Kill Chains Analysis}{May 2021}
+\begin{itemize}
+\resitem{Recognized the impact of our analysis showing the benefit of novel decision aids at the army tactical level in partnership with OUSD R\&E, Army Futures Command, and MIT Lincoln Labs}
+\end{itemize}
+
+\item \award{Breakthrough Award: Chief's Challenge Prototype}{July 2020}\begin{itemize}
+\resitem{Acknowledged our team's work to rapidly create an exemplar JADC2 prototype for the Air Force Secretary of Defense under a tight deadline}
+\end{itemize}
+
+\end{itemize}
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+
+\begin{itemize}
+\item \ressubheading{Harvard University}{Cambridge, MA}{PhD in Applied Physics}{May 2018}     
+\begin{itemize}
+\resitem{Conducted experiments and developed probabilistic models \& simulations to investigate microbial colonies' stochastic evolutionary dynamics on the surface of complex fluids and materials}
+
+\end{itemize}
+
+\item \ressubheading{Harvard University}{Cambridge, MA}{PhD Secondary Field: Computational Science and Engineering (CSE)}{May 2018}
+\begin{itemize}                   
+\resitem{Mastered state-of-the-art computational methods used in scientific research and data science; completed advanced applied math and scientific computing courses}
+\end{itemize}     
+              
+\item \ressubheading{Harvard University}{Cambridge, MA}{S.M. in Applied Physics}{November 2014}
+        \begin{itemize}
+        \resitem{GPA: 3.95/4.00}
+        \end{itemize}
+\item
+        \ressubheading{Case Western Reserve University}{Cleveland, OH}{Bachelor of Science in Engineering, Engineering Physics}{May 2012}
+        \begin{itemize}
+                \resitem{GPA: 4.00/4.00, Summa Cum Laude, Valedictorian }
+                \resitem{Engineering Concentration: Aerospace Engineering}
+        \end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Selected Graduate Fellowships and Awards}
+
+\begin{itemize}
+
+\item \ressubheading{Institute for Applied Computational Science Scholarship}{Cambridge, MA}{Graduate Student}{September 2016 - September 2017}
+
+\begin{itemize}
+\resitem{Wrote proposal and won a \$25,000 student scholarship from Harvard's Institute for Applied Computational Science (IACS)}
+
+\resitem{Used funds to further develop my IACS capstone: an OpenCL-powered Lattice Boltzmann fluid mechanics simulator utilizing OpenGL for real-time visualization}
+
+\end{itemize}
+
+
+\item \ressubheading{Department of Energy Office of Science Graduate Fellowship}{Washington, D.C.}{Graduate Student}{September 2012 - September 2015}
+
+\begin{itemize}
+
+\resitem{Wrote proposal to win a competitive fellowship that supports students pursuing training in areas relevant to Department of Energy (DOE). Selected out of 1,300 applicants; 50 fellowships awarded}
+\resitem{Attended yearly conferences at National Laboratories; presented posters on my active research, networked with other DOE fellows and government officials}
+                
+\end{itemize}
+
+\item \ressubheading{Harvard University Pierce Fellow}{Cambridge, MA}{Graduate Student}{September 2012 - September 2015}
+
+\begin{itemize}
+                
+\resitem{Won fellowship awarded to the highest caliber PhD students accepted into Harvard's School of Engineering and Applied Sciences (SEAS). Selected out of 150 students; 8 fellowships awarded}
+                                
+\end{itemize}
+
+\end{itemize}
+
+\clearpage 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Computational \& Analytical Skills}
+
+\begin{myitemize}
+
+\skillitem{Over 12 years of experience optimizing programs to run on multiple processors, graphics processing units (GPUs), and supercomputers}
+
+\skillitem{Expert at using Jupyter/IPython Notebooks to explore, visualize, and analyze large tabular datasets and large collections of images}
+
+\skillitem{Experienced at applying stochastic techniques to model and solve high-dimensional problems}
+
+\skillitem{Expert at rapidly creating new M\&S software tools to answer novel questions}
+
+\skillitem{Ability to create and calibrate mathematical models to data through core physics training}
+\skillitem{Expert knowledge of Applied Mathematics, especially stochastic modeling involving the Master equation, the Fokker-Planck equation (PDEs), and (spatial) stochastic differential equations}
+
+\skillheader{Selected Government Software}
+\begin{myitemize}
+\skillitem{AFSIM, pymission, SBSS, C2S, milsymbol, custom MITRE AFSIM/Python packages}
+\end{myitemize}
+
+\skillheader{Languages for General Scientific Computing:}
+\begin{myitemize}
+\skillitem{Python, Cython, OpenCL, CUDA, C, C++, Java, Mathematica, Matlab}
+\end{myitemize}
+
+\skillheader{Selected Python Packages and Tools:}
+\begin{myitemize}
+\skillitem{IPython/Jupyter Notebook, matplotlib, seaborn, colorcet, numpy, scipy, pandas, pandera, astrolib, scikit-image, pymc3 multiprocessing, cython, cython\_gsl, mako, PyOpenCL, pyCUDA}
+\end{myitemize}
+
+\skillheader{Selected Software Development Tools:}
+\begin{myitemize}
+\skillitem{Docker, CI/CD, GitLab, git, Django, REST APIs, Flask, FastAPI, Pydantic, JIRA, Nexus Registries, VS Code, PyCharm, vim}
+\end{myitemize}
+
+\skillheader{Fluid and Solid Mechanics Simulations:}
+\begin{myitemize}
+\skillitem{Lattice Boltzmann Method (custom-built code), OpenFOAM, SALOME, gmsh}
+\end{myitemize}        
+
+\skillheader{Image Analysis Tools}
+\begin{myitemize}
+\resitem{Python, OpenCL, ImageJ/Fiji}
+\end{myitemize}
+             
+\end{myitemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Certifications}
+
+
+\begin{itemize}
+\item \ressubheading{TS/SCI Clearance}{MITRE}{Active}{October 2020}
+\item \ressubheading{Secret Clearance}{MITRE}{Active}{October 2019}
+
+
+\item \ressubheading{Engineer in Training (EIT)}{Ohio}{Active}{September 2012}
+\begin{itemize}
+
+\resitem{Successfully passed Fundamentals of Engineering Exam, the first step towards becoming a licensed Professional Engineer (PE)}
+\end{itemize}
+
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Publications}
+
+\renewcommand{\refname}{\vspace*{-12mm}}
+
+\begin{refsection}[Me]
+\nocite{*}
+\printbibliography
+\end{refsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\resheading{Conferences and Invited Presentations}
+
+%\renewcommand{\refname}{\vspace*{-12mm}}
+
+%\begin{refsection}[Conferences]
+%\nocite{*}
+%\printbibliography
+%\end{refsection}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\resheading{Professional Organizations}
+%
+%\begin{itemize}
+%        \resitem{Tau Beta Pi Engineering Honor Society}
+ %       \resitem{American Physical Society}
+%\end{itemize}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
